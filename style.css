@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', serif;
+}
+
+.header {
+    margin: 100px 20px ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.header-left{
+   width: 350px;
+}
+
+.header-h2{
+   margin-bottom: 10px;
+}
+
+img {
+    width: 60%;
+    max-width: 60%;
+ }
+
+ .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-bottom: 100px;
+ }
+
+ .card:nth-child(2),
+ .card:nth-child(5) {
+	margin-top: 100px;
+}
+
+ .flex {
+    display: flex;
+    justify-content: center;
+ }
+
+ .job {
+    text-transform: uppercase;
+    font-size: 10px;
+    writing-mode: vertical-lr;
+    margin: 0 5px;
+ }
+
+ .name {
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .footer {
+    text-align: center;
+    margin-bottom: 25px;
+ }
+
+@media screen and (max-width: 900px) {
+
+
+.header {
+   display: block;
+   padding: 0;
+   margin: 100px 30px;
+}
+
+.header-left {
+width: 100%;
+  margin-top: 80px;
+}
+
+.card-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   margin-bottom: 100px;
+}
+
+.card:nth-child(5) {
+   margin-top: 0;
+ }
+.card:nth-child(even) {
+  margin-top: 100px;
+}
+
+.name {
+   text-align: center;
+   font-size: 14px;
+}
+
+}
